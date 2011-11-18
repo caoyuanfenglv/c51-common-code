@@ -17,6 +17,11 @@ typedef unsigned long ulong;
 
 /*******************************/
 
+<<<<<<< HEAD
+=======
+extern void delay1s(void);
+extern void delay1ms(void);
+>>>>>>> f90a4d47dbdf7bf50ed175e13c2d1b5d9c836a3f
 extern void delay(unsigned char);
 extern void delay_ms(unsigned char);
 
