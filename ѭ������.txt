@@ -1,0 +1,2 @@
+#include <intrins.h>
+P0=_cror_(P0,1);
