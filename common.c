@@ -1,11 +1,12 @@
 #include <intrins.h>
 #include "common.h"
+//å„ç§å»¶æ—¶ä¼šç”±äºæ‰€ç”¨å›ºä»¶çš„ä¸åŒè€Œæœ‰æ‰€ä¸åŒ
 
 /********************************
-*            »ù´¡ÑÓÊ±           *
+*            ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±           *
 ********************************/
 
-void delay1s(void)   //ÑÓÊ±1Ãë	Îó²î 0us
+void delay1s(void)   //ï¿½ï¿½Ê±1ï¿½ï¿½	ï¿½ï¿½ï¿½ï¿½ 0us
 {
     unsigned char a,b,c;
     for(c=46;c>0;c--)
@@ -14,7 +15,7 @@ void delay1s(void)   //ÑÓÊ±1Ãë	Îó²î 0us
     _nop_();  //if Keil,require use intrins.h
 }
 
-void delay1ms(void)   //ÑÓÊ±1ºÁÃë	Îó²î 0us
+void delay1ms(void)   //ï¿½ï¿½Ê±1ï¿½ï¿½ï¿½ï¿½	ï¿½ï¿½ï¿½ï¿½ 0us
 {
     unsigned char a,b;
     for(b=199;b>0;b--)
@@ -22,16 +23,16 @@ void delay1ms(void)   //ÑÓÊ±1ºÁÃë	Îó²î 0us
 }
 							
 /********************************
-*            ³£ÓÃÑÓÊ±           *
+*            ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±           *
 ********************************/
-void delay(unsigned char time)	//ÑÓÊ±timeÃë
+void delay(unsigned char time)	//ï¿½ï¿½Ê±timeï¿½ï¿½
 {
 	do
 		delay1s();
 	while(--time);
 }
 
-void delay_ms(unsigned char time)	//ÑÓÊ±timeºÁÃë
+void delay_ms(unsigned char time)	//ï¿½ï¿½Ê±timeï¿½ï¿½ï¿½ï¿½
 {
 	do
 		delay1ms();
